@@ -147,3 +147,21 @@ header {
 #solar::before {
     background: var(--bg-solar);
 }
+
+/* Logo Animation */
+@keyframes color-rotate {
+
+    /* Roatates through the entire color wheel */
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.logo:hover {
+    animation: color-rotate 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
