@@ -21,8 +21,8 @@ a {
 .navbar {
     height: 70px;
     width: 100%;
-    background: black;
-    color: white;
+    background: var(--bg-nav);
+    color: var(--text);
 }
 
 .navbar-nav {
@@ -48,8 +48,8 @@ header {
     width: 500px;
     opacity: 0;
     z-index: 2;
-    background: blue;
-    border-top: 2px solid white;
+    background: var(--bg-dropdown);
+    border-top: 2px solid var(--border-color);
 
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -134,4 +134,16 @@ header {
     --gray4: #3ea565;
     --gray5: #005368;
     --gray6: #003d4c;
+}
+
+#dark::before {
+    background: #2a2e35;
+}
+
+#light::before {
+    background: #ffffff;
+}
+
+#solar::before {
+    background: var(--bg-solar);
 }
